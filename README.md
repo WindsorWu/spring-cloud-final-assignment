@@ -1,39 +1,50 @@
 # SpringCloud期末大作业
 
 #### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
-
+该项目的主要目标是使用Springboot开发技术开发一个“书店网上商城系统”，
+该系统不仅需要满足顾客注册、登录、在web端浏览商品、加入购物车、提交支付订单、查询已支付、未支付订单等的需求，
+还需要满足网上书店的经营管理者管理商城商品以及管理线下分店的需求。
+同时，系统也需要具备安全控制、权限控制等功能，商家或客户在进行相关操作时必须登录才有权限进行操作等。系统应该尽可能做到功能丰富、界面美观。
 #### 软件架构
 软件架构说明
+![](./doc/p1.png)
 
+#### 安装说明
 
-#### 安装教程
+1.  连接数据库，导入系统表。
+2.  等待系统自动导包。
+3.  运行主文件注意端口不要被占用。
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+#### 数据库E-R图
 
-#### 使用说明
+![](./doc/p2.png)
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+#### 运行效果说明
 
-#### 参与贡献
+1.登录注册页面
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-  
+![](./doc/p3.png)
 
-#### 特技
+![](./doc/p4.png)
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+![](./doc/p5.png)
+
+![](./doc/p6.png)
+
+2.添加功能
+
+![](./doc/p9.png)
+
+![](./doc/p10.png)
+
+3.查询功能
+
+![](./doc/p7.png)
+
+4.修改功能
+
+![](./doc/p8.png)
+
+5.删除功能
+
+![](./doc/p11.png)
