@@ -221,6 +221,10 @@ public class UserServiceImpl implements IUserService {
         return userMapper.selectByPrimaryKey(userId);
     }
 
+    public User findUserById(int userId) {
+        return userMapper.selectByPrimaryKey(userId);
+    }
+
     @Autowired
     private MyShiroRealm myShiroRealm;
 
