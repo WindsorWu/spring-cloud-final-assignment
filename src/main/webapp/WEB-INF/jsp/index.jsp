@@ -112,7 +112,7 @@
             <div class="news">
                 <p class="title">最新动态</p>
                 <ul>
-                    <li>要买好书，就来东东</li>
+                    <li>要买好书，就来书店商城</li>
                     <li>今日特惠，5折抢购</li>
                     <li>满100减50</li>
                     <li>满300减150</li>
@@ -122,7 +122,7 @@
             <div class="hot_book">
                 <p class="title">新书热卖</p>
                 <ul>
-                    <li>要买好书，就来东东</li>
+                    <li>要买好书，就来书店商城</li>
                     <li>今日特惠，5折抢购</li>
                     <li>满100减50</li>
                     <li>满300减150</li>
@@ -161,7 +161,7 @@
             <div class="hot_book">
                 <p class="title">畅销图书</p>
                 <ul>
-                    <li>要买好书，就来东东</li>
+                    <li>要买好书，就来书店商城</li>
                     <li>今日特惠，5折抢购</li>
                     <li>满100减50</li>
                     <li>满300减150</li>

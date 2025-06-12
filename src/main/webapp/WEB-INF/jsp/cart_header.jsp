@@ -24,7 +24,7 @@
     </div>
     <div class="row cartheader">
         <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 img_div">
-            <a href="index.html" target="_blank"><img src="img/dd.jpg" width="90%" alt="dd.com"/></a>
+            <a href="index.html" target="_blank"><img src="img/dd.png" width="90%" alt="dd.com"/></a>
         </div>
         <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 cart_text_div">
             <span class="cart_text_span">购物车</span>

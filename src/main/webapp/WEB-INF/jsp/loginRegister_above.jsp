@@ -3,7 +3,7 @@
 <html>
 <div id="above">
     <div id="img">
-        <a href="" target="_blank"><img src="img/dd.jpg" width="90%" alt="dd.com"/></a>
+        <a href="" target="_blank"><img src="img/dd.png" width="90%" alt="dd.com"/></a>
     </div>
     <div id="a_">
         <span class="a"><a href="">帮助服务</a></span>

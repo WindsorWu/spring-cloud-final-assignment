@@ -23,7 +23,7 @@
     </div>
     <div class="row orderheader">
         <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 img_div">
-            <a href="index.html" target="_blank"><img src="img/dd.jpg" width="90%" alt="dd.com"
+            <a href="index.html" target="_blank"><img src="img/dd.png" width="90%" alt="dd.com"
                                                       style="margin-top: 20px"/></a>
         </div>
         <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 order_text_div">

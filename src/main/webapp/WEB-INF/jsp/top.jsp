@@ -12,7 +12,7 @@
                     <div class="btn-group">
                         <button type="button" class="btn btn-default dropdown-toggle mybtn"
                                 data-toggle="dropdown">
-                            我的dd<span class="caret"></span>
+                            我的书店商城<span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="user/info">个人信息</a></li>
@@ -47,7 +47,7 @@
             </li>
 
             <li class="header_li">
-                欢迎来到dd书城，<a href="">首页</a>
+                欢迎来到书店商城，<a href="">首页</a>
             </li>
 
         </ul>

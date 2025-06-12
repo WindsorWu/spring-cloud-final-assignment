@@ -2,7 +2,8 @@
 SQLyog Ultimate v12.08 (64 bit)
 MySQL - 5.7.20 : Database - bookstore
 *********************************************************************
-*/
+*/
+
 
 /*!40101 SET NAMES utf8 */;
 
@@ -134,7 +135,7 @@ CREATE TABLE `global_parameter` (
 
 /*Data for the table `global_parameter` */
 
-insert  into `global_parameter`(`para_id`,`web_name`,`reg_clause`,`notice`,`address`,`postcode`,`telephone`,`copyright`,`weblogo`,`afford_method`,`shops_stream`,`post_method`,`post_price`,`post_desc`,`work_time`,`after_service`,`law`,`commques`,`deal_rule`) values (1,'dd图书，买你所想，买你所爱，你值得拥有','你可以注册','请注意，这是公告','广州海珠区仲恺路500号','50000','15814516280','东东','img/dd.jpg',NULL,NULL,NULL,NULL,NULL,'7X24小时',NULL,NULL,'没问题','没问题');
+insert  into `global_parameter`(`para_id`,`web_name`,`reg_clause`,`notice`,`address`,`postcode`,`telephone`,`copyright`,`weblogo`,`afford_method`,`shops_stream`,`post_method`,`post_price`,`post_desc`,`work_time`,`after_service`,`law`,`commques`,`deal_rule`) values (1,'dd图书，买你所想，买你所爱，你值得拥有','你可以注册','请注意，这是公告','广州海珠区仲恺路500号','50000','15814516280','东东','img/dd.png',NULL,NULL,NULL,NULL,NULL,'7X24小时',NULL,NULL,'没问题','没问题');
 
 /*Table structure for table `order_detail` */
 

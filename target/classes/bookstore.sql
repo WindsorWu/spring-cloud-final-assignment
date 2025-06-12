@@ -340,7 +340,7 @@ CREATE TABLE `global_parameter` (
 -- ----------------------------
 -- Records of global_parameter
 -- ----------------------------
-INSERT INTO `global_parameter` VALUES ('1', 'dd图书，买你所想，买你所爱，你值得拥有', '你可以注册', '请注意，这是公告', '广州海珠区仲恺路500号', '50000', '15814516280', '东东', 'img/dd.jpg', null, null, null, null, null, '7X24小时', null, null, '没问题', '没问题');
+INSERT INTO `global_parameter` VALUES ('1', 'dd图书，买你所想，买你所爱，你值得拥有', '你可以注册', '请注意，这是公告', '广州海珠区仲恺路500号', '50000', '15814516280', '东东', 'img/dd.png', null, null, null, null, null, '7X24小时', null, null, '没问题', '没问题');
 
 -- ----------------------------
 -- Table structure for orders
