@@ -1,10 +1,13 @@
 package org.zdd.bookstore.pay;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 import org.zdd.bookstore.common.utils.HttpClientUtils;
 import org.zdd.bookstore.model.entity.Orders;
+import org.zdd.bookstore.model.service.IOrderDetailService;
+import org.zdd.bookstore.model.service.IOrderService;
 
 import java.math.BigDecimal;
 import java.util.HashMap;
@@ -30,11 +33,34 @@ public class WeixinPayServiceImpl implements WeixinPayService {
     /** 统一下单请求地址 */
     @Value("${unifiedorder}")
     private String unifiedorder;
+
+    /** 测试支付开关 */
+    @Value("${test.pay.mock:false}")
+    private boolean testPayMock;
+
+    @Autowired
+    private IOrderService orderService;
+    @Autowired
+    private IOrderDetailService orderDetailService;
+
     /**
      * 生成微信支付二维码
      * @return 集合
      */
     public Map<String, String> genPayCode(PayContext payContext){
+        if (testPayMock) {
+            // 测试环境，直接返回模拟支付二维码和数据
+            Orders orders = payContext.getOrders();
+            Map<String, String> data = new HashMap<>();
+            data.put("codeUrl", "https://mockpay.qrcode/success/" + orders.getOrderId());
+            data.put("totalFee", orders.getPayment());
+            data.put("outTradeNo", orders.getOrderId());
+            data.put("description", payContext.getBookInfos().get(0).getName());
+            // 自动模拟支付成功，更新订单状态
+            payContext.setBookInfos(orderDetailService.findBooksByOrderId(orders.getOrderId()));
+            orderService.updateOrderAfterPay(payContext);
+            return data;
+        }
         Orders orders = payContext.getOrders();
         /** 创建Map集合封装请求参数 */
         Map<String, String> param = new HashMap<>();

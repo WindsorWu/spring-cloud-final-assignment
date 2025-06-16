@@ -1,9 +1,3 @@
--- MySQL dump 10.13  Distrib 8.0.27, for Win64 (x86_64)
---
--- Host: 127.0.0.1    Database: bookstore
--- ------------------------------------------------------
--- Server version	8.0.27
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
@@ -18,6 +12,7 @@
 --
 -- Table structure for table `book_category`
 --
+
 CREATE DATABASE /*!32312 IF NOT EXISTS*/`bookstore` /*!40100 DEFAULT CHARACTER SET utf8 */;
 
 USE `bookstore`;
@@ -514,6 +509,17 @@ CREATE TABLE `user_role` (
   CONSTRAINT `user_role_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`),
   CONSTRAINT `user_role_ibfk_2` FOREIGN KEY (`role_id`) REFERENCES `role` (`role_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+-- 1. 统一 orders 表
+ALTER TABLE orders CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+ALTER TABLE orders MODIFY order_id VARCHAR(64) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL;
+
+-- 2. 统一 order_shipping 表
+ALTER TABLE order_shipping CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+ALTER TABLE order_shipping MODIFY order_id VARCHAR(64) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL;
+
+-- 3. 统一 order_detail 表
+ALTER TABLE order_detail CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+ALTER TABLE order_detail MODIFY order_id VARCHAR(64) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

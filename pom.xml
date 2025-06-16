@@ -3,8 +3,8 @@
   <groupId>com.shop</groupId>
   <artifactId>bookshop</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
-  
+
+
    <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -52,6 +52,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mariadb.jdbc</groupId>
+            <artifactId>mariadb-java-client</artifactId>
+            <version>1.5.2</version> <!-- 可根据需要更新版本 -->
         </dependency>
 
         <!-- 热部署 -->
@@ -161,5 +166,5 @@
             </plugin>
         </plugins>
     </build>
-  
+
 </project>
